@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="main-body">
+  <app-sidebar></app-sidebar>
+  <div class="notes-side">
+    <div>
+      <!-- <a href="add"> -->
+      <button mat-raised-button type="button" class="add-button btn btn-primary" (click)="addNote()">
+        Add Note
+      </button>
+      <!-- </a> -->
+    </div>
+    <div>
+      <div *ngFor="let note of notesList" class="notes">
+        <div class="note">
+          {{note}}
+        </div>
+        <div class="buttons">
+          <!-- <button type="button" class="view-button btn btn-primary" (click)="viewNote(note)">
+            View
+          </button> -->
+          <button mat-icon-button color="black" aria-label="Example icon button with a home icon" (click)="viewNote(note)">
+            <mat-icon>visibility</mat-icon>
+          </button>
+          <!-- <button type="button" class="edit-button btn btn-primary" (click)="editNote(note)">
+            Edit
+          </button> -->
+          <!-- <button type="button" (click)="deleteNote(note)" class="delete-button btn btn-primary"
+            (click)="deleteNote(note)">
+            Delete
+          </button> -->
+          <button mat-icon-button color="black" aria-label="Example icon button with a home icon" (click)="editNote(note)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button color="black" aria-label="Example icon button with a home icon" (click)="deleteNote(note)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

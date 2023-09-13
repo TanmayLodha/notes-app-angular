@@ -1,0 +1,33 @@
+.sidebar {
+  // width: 100%;
+  width:fit-content;
+  height: 100%;
+  background-color: #f24f4f;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+.buttons {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  padding: 5px 25px;
+  justify-content: space-around;
+  // font-weight: 500;
+}
+
+.side-buttons {
+  flex-grow:1;
+  // border-radius: 0px;
+  border-width: 0px;
+  background-color: #f24f4f;
+  font-weight: 500;
+  // width:100%;
+}

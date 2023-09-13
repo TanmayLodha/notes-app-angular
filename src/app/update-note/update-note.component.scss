@@ -1,0 +1,59 @@
+.main-content {
+  height: 100vh;
+}
+
+.main-content {
+  margin: 10px 25px 10px 25px;
+  flex-grow: 1;
+}
+
+.form-group {
+  // margin: 10px 25px 10px 25px;
+  // background-color: wheat;
+  margin: 10px 0px;
+}
+
+.form-control {
+  background-color: wheat;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  // height: 25vh;
+  border-radius: 0px;
+}
+
+.input-body {
+  height: 20vh;
+}
+
+.input-height {
+  height: 5vh;
+}
+
+.submit-button {
+  margin-right: 10px;
+  margin-top: 5px;
+  background-color: aqua;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  color: black;
+  border-radius: 3px;
+  border-radius: 0px;
+}
+
+.back-button {
+  margin-right: 10px;
+  margin-top: 5px;
+  background-color: aqua;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  color: black;
+  border-radius: 3px;
+  border-radius: 0px;
+}
+
+.main-body {
+  display: flex;
+}

@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="main-body">
+  <app-sidebar></app-sidebar>
+  <div class="main-content">
+    <h2>Add a Note</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="head">Title:</label>
+        <input type="text" id="head" name="head" [(ngModel)]="formData.head" class="form-control input-title" required>
+      </div>
+      <div class="form-group">
+        <label for="body">Body:</label>
+        <textarea id="body" name="body" [(ngModel)]="formData.body" class="form-control input-body" required></textarea>
+      </div>
+      <div class="buttons">
+        <button mat-stroked-button type="submit" class="btn btn-primary submit-button">Submit</button>
+        <button mat-stroked-button type="button" class="btn btn-primary back-button" (click)="backButton()">Back</button>
+      </div>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

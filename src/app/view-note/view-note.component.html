@@ -1,0 +1,18 @@
+<!-- <p>view-note works!</p> -->
+<app-header></app-header>
+<div class="main-body">
+  <app-sidebar></app-sidebar>
+  <div class="view-page">
+    <div class="title">
+      <h2>Title</h2>
+      <p>{{formData.head}}</p>
+    </div>
+    <div class="body">
+      <h2>Body</h2>
+      <p>{{formData.body}}</p>
+    </div>
+    <button color="warn" class="back-button btn btn-primary" (click)="backButton()">Back</button>
+  
+  </div>
+</div>
+<app-footer></app-footer>
